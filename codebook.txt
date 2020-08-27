@@ -1,0 +1,141 @@
+========
+Codebook
+========
+
+
+Table of Contents:
+1. Original explanations on the variables
+2. Updated names for variables
+
+
+
+****************************************
+
+
+
+1. Original explanations on the old variables
+
+
+Feature Selection 
+=================
+
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
+
+These signals were used to estimate variables of the feature vector for each pattern:  
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+
+tBodyAcc-XYZ
+tGravityAcc-XYZ
+tBodyAccJerk-XYZ
+tBodyGyro-XYZ
+tBodyGyroJerk-XYZ
+tBodyAccMag
+tGravityAccMag
+tBodyAccJerkMag
+tBodyGyroMag
+tBodyGyroJerkMag
+fBodyAcc-XYZ
+fBodyAccJerk-XYZ
+fBodyGyro-XYZ
+fBodyAccMag
+fBodyAccJerkMag
+fBodyGyroMag
+fBodyGyroJerkMag
+
+
+
+****************************************
+
+
+
+
+2. Updated names for variables
+
+ [1] "activity": either walking, standing up, etc.
+ [2] "subject": the subject id number
+
+ The rest are self-descriptive as they have been explicitely named. Please refer to "1." for added information about the methodology and the values measured.
+
+ [3] "time_body_acceleration_mean_x_axis"                       
+ [4] "time_body_acceleration_mean_y_axis"                       
+ [5] "time_body_acceleration_mean_z_axis"                       
+ [6] "time_gravity_acceleration_mean_x_axis"                    
+ [7] "time_gravity_acceleration_mean_y_axis"                    
+ [8] "time_gravity_acceleration_mean_z_axis"                    
+ [9] "time_body_acceleration_jerk_mean_x_axis"                  
+[10] "time_body_acceleration_jerk_mean_y_axis"                  
+[11] "time_body_acceleration_jerk_mean_z_axis"                  
+[12] "time_body_gyroscope_mean_x_axis"                          
+[13] "time_body_gyroscope_mean_y_axis"                          
+[14] "time_body_gyroscope_mean_z_axis"                          
+[15] "time_body_gyroscope_jerk_mean_x_axis"                     
+[16] "time_body_gyroscope_jerk_mean_y_axis"                     
+[17] "time_body_gyroscope_jerk_mean_z_axis"                     
+[18] "time_body_acceleration_magnitude_mean"                    
+[19] "time_gravity_acceleration_magnitude_mean"                 
+[20] "time_body_acceleration_jerk_magnitude_mean"               
+[21] "time_body_gyroscope_magnitude_mean"                       
+[22] "time_body_gyroscope_jerk_magnitude_mean"                  
+[23] "frequency_body_acceleration_mean_x_axis"                  
+[24] "frequency_body_acceleration_mean_y_axis"                  
+[25] "frequency_body_acceleration_mean_z_axis"                  
+[26] "frequency_body_acceleration_mean_frequency_x_axis"        
+[27] "frequency_body_acceleration_mean_frequency_y_axis"        
+[28] "frequency_body_acceleration_mean_frequency_z_axis"        
+[29] "frequency_body_acceleration_jerk_mean_x_axis"             
+[30] "frequency_body_acceleration_jerk_mean_y_axis"             
+[31] "frequency_body_acceleration_jerk_mean_z_axis"             
+[32] "frequency_body_acceleration_jerk_mean_frequency_x_axis"   
+[33] "frequency_body_acceleration_jerk_mean_frequency_y_axis"   
+[34] "frequency_body_acceleration_jerk_mean_frequency_z_axis"   
+[35] "frequency_body_gyroscope_mean_x_axis"                     
+[36] "frequency_body_gyroscope_mean_y_axis"                     
+[37] "frequency_body_gyroscope_mean_z_axis"                     
+[38] "frequency_body_gyroscope_mean_frequency_x_axis"           
+[39] "frequency_body_gyroscope_mean_frequency_y_axis"           
+[40] "frequency_body_gyroscope_mean_frequency_z_axis"           
+[41] "frequency_body_acceleration_magnitude_mean"               
+[42] "frequency_body_acceleration_magnitude_mean_frequency"     
+[43] "frequency_body_acceleration_jerk_magnitude_mean"          
+[44] "frequency_body_acceleration_jerk_magnitude_mean_frequency"
+[45] "frequency_body_gyroscope_magnitude_mean"                  
+[46] "frequency_body_gyroscope_magnitude_mean_frequency"        
+[47] "frequency_body_gyroscope_jerk_magnitude_mean"             
+[48] "frequency_body_gyroscope_jerk_magnitude_mean_frequency"  
+[49] "time_body_acceleration_standard_deviation_x_axis"             
+[50] "time_body_acceleration_standard_deviation_y_axis"             
+[51] "time_body_acceleration_standard_deviation_z_axis"             
+[52] "time_gravity_acceleration_standard_deviation_x_axis"          
+[53] "time_gravity_acceleration_standard_deviation_y_axis"          
+[54] "time_gravity_acceleration_standard_deviation_z_axis"          
+[55] "time_body_acceleration_jerk_standard_deviation_x_axis"        
+[56] "time_body_acceleration_jerk_standard_deviation_y_axis"        
+[57] "time_body_acceleration_jerk_standard_deviation_z_axis"        
+[58] "time_body_gyroscope_standard_deviation_x_axis"                
+[59] "time_body_gyroscope_standard_deviation_y_axis"                
+[60] "time_body_gyroscope_standard_deviation_z_axis"                
+[61] "time_body_gyroscope_jerk_standard_deviation_x_axis"           
+[62] "time_body_gyroscope_jerk_standard_deviation_y_axis"           
+[63] "time_body_gyroscope_jerk_standard_deviation_z_axis"           
+[64] "time_body_acceleration_magnitude_standard_deviation"          
+[65] "time_gravity_acceleration_magnitude_standard_deviation"       
+[66] "time_body_acceleration_jerk_magnitude_standard_deviation"     
+[67] "time_body_gyroscope_magnitude_standard_deviation"             
+[68] "time_body_gyroscope_jerk_magnitude_standard_deviation"        
+[69] "frequency_body_acceleration_standard_deviation_x_axis"        
+[70] "frequency_body_acceleration_standard_deviation_y_axis"        
+[71] "frequency_body_acceleration_standard_deviation_z_axis"        
+[72] "frequency_body_acceleration_jerk_standard_deviation_x_axis"   
+[73] "frequency_body_acceleration_jerk_standard_deviation_y_axis"   
+[74] "frequency_body_acceleration_jerk_standard_deviation_z_axis"   
+[75] "frequency_body_gyroscope_standard_deviation_x_axis"           
+[76] "frequency_body_gyroscope_standard_deviation_y_axis"           
+[77] "frequency_body_gyroscope_standard_deviation_z_axis"           
+[78] "frequency_body_acceleration_magnitude_standard_deviation"     
+[79] "frequency_body_acceleration_jerk_magnitude_standard_deviation"
+[80] "frequency_body_gyroscope_magnitude_standard_deviation"        
+[81] "frequency_body_gyroscope_jerk_magnitude_standard_deviation"  

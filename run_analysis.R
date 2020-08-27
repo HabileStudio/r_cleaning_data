@@ -64,7 +64,7 @@ clean_dataset <- function(file){
     mutate(activity = activities) %>%
     mutate(subject = subject_ids) %>%
     # We extract only the mean and standard deviation measurements
-    select(contains("mean"), contains("std"), activity, subject, -contains("angle"))
+    select(contains("mean"), contains("standard_deviation"), activity, subject, -contains("angle"))
 }
 
 # Get the clean datasets
