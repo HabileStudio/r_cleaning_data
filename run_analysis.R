@@ -83,6 +83,6 @@ averages <- averages[1:(length(averages)-2)]
 # independent tidy data set with the average of
 # each variable for each activity and each subject
 
-write.table(averages, file = "tidy_dataset.csv")
+write.table(averages, file = "tidy_dataset.txt", row.name = FALSE)
 
-View(read.table("tidy_dataset.csv"))
+View(read.table("tidy_dataset.txt"))
